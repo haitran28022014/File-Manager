@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/txt_new_file_folder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="serif"
+        android:text="New Folder"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/edt_create"
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:textSize="16sp"
+        android:layout_marginBottom="20dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_new_file_folder"
+        android:fontFamily="serif"
+        android:hint="Enter Name">
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/btn_create"
+        android:layout_width="wrap_content"
+        android:text="OK"
+        android:textSize="18sp"
+        android:fontFamily="serif"
+        android:textColor="@color/colorAccent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/edt_create" />
+
+    <TextView
+        android:id="@+id/btn_cancel"
+        android:layout_width="wrap_content"
+        android:text="Cancel"
+        android:textSize="18sp"
+        android:fontFamily="serif"
+        android:layout_marginRight="24dp"
+        android:textColor="@color/colorAccent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edt_create"
+        android:layout_toLeftOf="@+id/btn_create" />
+</RelativeLayout>
